@@ -1,10 +1,10 @@
 Name:		lzip
 Summary:	Lossless file compressor based on the LZMA algorithm
-Version:	1.0
+Version:	1.4
 Release:	%mkrel 1
-Source:		http://es.geocities.com/ant_diaz2001/%{name}-%{version}.tar.gz
+Source:		http://nongnu.mirror.ironie.org/releases/%{name}/%{name}-%{version}.tar.gz
 Group:		Archiving/Compression
-URL:		http://es.geocities.com/ant_diaz2001/lzip.html
+URL:		http://www.nongnu.org/lzip/lzip.html
 License:	GPLv3+
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 %description
@@ -28,7 +28,6 @@ distribution and data archival.
 %setup -q
 
 %build
-%{__rm} -Rf %{buildroot}
 %configure
 %make
 
