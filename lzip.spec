@@ -1,8 +1,8 @@
 Name:		lzip
 Summary:	Lossless file compressor based on the LZMA algorithm
-Version:	1.4
-Release:	%mkrel 2
-Source:		http://nongnu.mirror.ironie.org/releases/%{name}/%{name}-%{version}.tar.gz
+Version:	1.8
+Release:	%mkrel 1
+Source:		/http://mirrors.aixtools.net/sv/%{name}/%{name}-%{version}.tar.gz
 Group:		Archiving/Compression
 URL:		http://www.nongnu.org/lzip/lzip.html
 License:	GPLv3+
@@ -28,7 +28,7 @@ distribution and data archival.
 %setup -q
 
 %build
-%configure
+%configure2_5x CXXFLAGS="%{optflags}"  
 %make
 
 %install
@@ -50,5 +50,8 @@ distribution and data archival.
 %defattr(-,root,root)
 %doc AUTHORS COPYING NEWS README ChangeLog
 %_bindir/%{name}
+%_bindir/lziprecover
+
 %_infodir/%{name}.info*
 %_mandir/man1/%{name}.1*
+%_mandir/man1/lziprecover.1*
