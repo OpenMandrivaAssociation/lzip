@@ -1,6 +1,6 @@
 Name:		lzip
 Summary:	Lossless file compressor based on the LZMA algorithm
-Version:	1.8
+Version:	1.9
 Release:	%mkrel 1
 Source:		http://mirrors.aixtools.net/sv/%{name}/%{name}-%{version}.tar.gz
 Group:		Archiving/Compression
