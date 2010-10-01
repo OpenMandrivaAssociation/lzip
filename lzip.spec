@@ -1,8 +1,8 @@
 Name:		lzip
 Summary:	Lossless file compressor based on the LZMA algorithm
-Version:	1.10
+Version:	1.11
 Release:	%mkrel 1
-Source:		http://mirror.lihnidos.org/GNU/savannah/%{name}-%{version}.tar.gz
+Source:		http://nongnu.askapache.com/lzip/%{name}-%{version}.tar.gz
 Group:		Archiving/Compression
 URL:		http://www.nongnu.org/lzip/lzip.html
 License:	GPLv3+
@@ -29,7 +29,7 @@ distribution and data archival.
 %setup -q
 
 %build
-%configure2_5x CXXFLAGS="%{optflags}"  
+%configure2_5x CXXFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
 %make
 
 %install
