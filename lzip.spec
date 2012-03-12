@@ -1,12 +1,11 @@
 Name:		lzip
 Summary:	Lossless file compressor based on the LZMA algorithm
-Version:	1.12
-Release:	%mkrel 1
-Source:		http://nongnu.askapache.com/lzip/%{name}-%{version}.tar.gz
+Version:	1.13
+Release:	1
+Source0:	http://nongnu.askapache.com/lzip/%{name}-%{version}.tar.gz
 Group:		Archiving/Compression
 URL:		http://www.nongnu.org/lzip/lzip.html
 License:	GPLv3+
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 Lzip is a lossless file compressor based on the LZMA (Lempel-Ziv-Markov
@@ -33,11 +32,7 @@ distribution and data archival.
 %make
 
 %install
-%{__rm} -Rf %{buildroot}
 %makeinstall_std
-
-%clean
-%{__rm} -Rf %{buildroot}
 
 %post
 %_install_info %{name}.info
@@ -46,11 +41,7 @@ distribution and data archival.
 %_remove_install_info %{name}.info
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING NEWS README ChangeLog
 %_bindir/%{name}
-%_bindir/lziprecover
-
 %_infodir/%{name}.info*
 %_mandir/man1/%{name}.1*
-%_mandir/man1/lziprecover.1*
