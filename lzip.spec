@@ -45,3 +45,43 @@ distribution and data archival.
 %_bindir/%{name}
 %_infodir/%{name}.info*
 %_mandir/man1/%{name}.1*
+
+
+%changelog
+* Mon Mar 12 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.13-1
++ Revision: 784345
+- version update 1.12
+
+* Fri May 06 2011 Funda Wang <fwang@mandriva.org> 1.12-1
++ Revision: 670631
+- new version 1.12
+
+* Fri Oct 01 2010 Funda Wang <fwang@mandriva.org> 1.11-1mdv2011.0
++ Revision: 582373
+- new version 1.11
+
+* Sun Jul 18 2010 Funda Wang <fwang@mandriva.org> 1.10-1mdv2011.0
++ Revision: 554850
+- New version 1.10
+
+* Mon Jan 18 2010 Frederik Himpe <fhimpe@mandriva.org> 1.9-1mdv2010.1
++ Revision: 493243
+- update to new version 1.9
+- Fix source URL
+
+* Sat Jan 02 2010 Frederik Himpe <fhimpe@mandriva.org> 1.8-1mdv2010.1
++ Revision: 485125
+- Update to new version 1.8
+- Use Mandriva CFLAGS
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Fri Mar 20 2009 Nicolas Vigier <nvigier@mandriva.com> 1.4-1mdv2009.1
++ Revision: 359079
+- version 1.4
+
+* Fri Oct 17 2008 Nicolas Vigier <nvigier@mandriva.com> 1.0-1mdv2009.1
++ Revision: 294708
+- import lzip
+
