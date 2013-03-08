@@ -34,12 +34,6 @@ distribution and data archival.
 %install
 %makeinstall_std
 
-%post
-%_install_info %{name}.info
-
-%preun
-%_remove_install_info %{name}.info
-
 %files
 %doc AUTHORS COPYING NEWS README ChangeLog
 %_bindir/%{name}
