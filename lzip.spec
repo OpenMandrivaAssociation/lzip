@@ -1,6 +1,6 @@
 Name:		lzip
 Summary:	Lossless file compressor based on the LZMA algorithm
-Version:	1.14
+Version:	1.15
 Release:	1
 Source0:	http://nongnu.askapache.com/lzip/%{name}-%{version}.tar.gz
 Group:		Archiving/Compression
