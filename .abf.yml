@@ -2,3 +2,4 @@ removed_sources:
   lzip-1.14.tar.gz: ee54a3f39f7bf96ec677765f88b8458d0988bf10
 sources:
   lzip-1.15.tar.gz: a79d062d72071b5bb2bb7ef50dda6ac408c24192
+  lzip-1.16-rc1.tar.lz: ea1c02f25b74491da312ca89d11b0a63769569c4
