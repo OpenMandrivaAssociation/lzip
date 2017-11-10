@@ -1,7 +1,10 @@
+# (tpg) optimize it a bit
+%global optflags %optflags -Ofast
+
 Name:		lzip
 Summary:	Lossless file compressor based on the LZMA algorithm
 Version:	1.19
-Release:	1
+Release:	2
 Source0:	http://nongnu.askapache.com/lzip/%{name}-%{version}.tar.lz
 Group:		Archiving/Compression
 URL:		http://www.nongnu.org/lzip/lzip.html
