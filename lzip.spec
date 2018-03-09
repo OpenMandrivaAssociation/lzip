@@ -3,8 +3,8 @@
 
 Name:		lzip
 Summary:	Lossless file compressor based on the LZMA algorithm
-Version:	1.19
-Release:	2
+Version:	1.20
+Release:	1
 Source0:	http://nongnu.askapache.com/lzip/%{name}-%{version}.tar.lz
 Group:		Archiving/Compression
 URL:		http://www.nongnu.org/lzip/lzip.html
@@ -32,10 +32,10 @@ distribution and data archival.
 
 %build
 %configure CXXFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
-%make CXX=%{__cxx}
+%make_build CXX=%{__cxx}
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc AUTHORS COPYING NEWS README ChangeLog
