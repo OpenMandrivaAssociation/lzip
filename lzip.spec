@@ -5,7 +5,7 @@ Name:		lzip
 Summary:	Lossless file compressor based on the LZMA algorithm
 Version:	1.20
 Release:	1
-Source0:	http://nongnu.askapache.com/lzip/%{name}-%{version}.tar.lz
+Source0:	http://nongnu.askapache.com/lzip/%{name}-%{version}.tar.gz
 Group:		Archiving/Compression
 URL:		http://www.nongnu.org/lzip/lzip.html
 License:	GPLv3+
@@ -39,6 +39,6 @@ distribution and data archival.
 
 %files
 %doc AUTHORS COPYING NEWS README ChangeLog
-%_bindir/%{name}
-%_infodir/%{name}.info*
-%_mandir/man1/%{name}.1*
+%{_bindir}/%{name}
+%{_infodir}/%{name}.info*
+%{_mandir}/man1/%{name}.1*
