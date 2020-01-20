@@ -28,7 +28,7 @@ during compression. These features make lzip well suited for software
 distribution and data archival.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure CXXFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
