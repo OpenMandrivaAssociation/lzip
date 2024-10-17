@@ -7,7 +7,7 @@ Version:	1.24.1
 Release:	1
 Source0:	http://nongnu.askapache.com/lzip/%{name}-%{version}.tar.gz
 Group:		Archiving/Compression
-URL:		http://www.nongnu.org/lzip/lzip.html
+URL:		https://www.nongnu.org/lzip/lzip.html
 License:	GPLv3+
 
 %description
