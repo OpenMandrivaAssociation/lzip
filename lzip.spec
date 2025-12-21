@@ -10,6 +10,11 @@ Group:		Archiving/Compression
 URL:		https://www.nongnu.org/lzip/lzip.html
 License:	GPLv3+
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Lzip is a lossless file compressor based on the LZMA (Lempel-Ziv-Markov
 chain-Algorithm) algorithm. The high compression of LZMA comes from
